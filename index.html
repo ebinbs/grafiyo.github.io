@@ -160,7 +160,7 @@
 <div class="wrap">
 
   <nav>
-    <a href="#" class="brand"><img src="grafiyo-logo.jpg" alt="Grafiyo Creatives logo"><span>GRAFIYO</span><sup>®</sup></a>
+    <a href="#" class="brand"><img src="grafiyo-logo.jpg" alt="Grafiyo Creatives logo" onerror="this.style.display='none'"><span>GRAFIYO</span><sup>®</sup></a>
     <a class="navlink" href="#work">Work</a>
     <a class="navlink" href="#instagram">Instagram</a>
     <a href="#contact" class="nav-cta">CONTACT US ↗</a>
@@ -173,7 +173,7 @@
       <p class="sub">GRAFIYO is a graphic design brand creating distinctive posters, digital creatives and visual identities for businesses, creators and communities.</p>
 
       <div class="founder">
-        <span class="founder-avatar"><img src="ebin-photo.png" alt="Ebin BS"></span>
+        <span class="founder-avatar"><img src="ebin-photo.png" alt="Ebin BS" onerror="this.style.display='none'"></span>
         <div>
           <b>Ebin BS</b>
           <span>Graphic Designer · Founder of GRAFIYO</span>
@@ -199,7 +199,7 @@
 
   <section class="ig reveal" id="instagram">
     <div class="ig-grid">
-      <div class="phone"><img src="instagram-screenshot.jpg" alt="Grafiyo Creatives Instagram profile"></div>
+      <div class="phone"><img src="instagram-screenshot.jpg" alt="Grafiyo Creatives Instagram profile" onerror="this.style.display='none'"></div>
       <div class="ig-content">
         <h2>Follow the journey <span>@grafiyo_</span></h2>
         <p>Grafiyo Creatives is where every new poster, brand design and client project gets posted first.</p>
@@ -221,13 +221,13 @@
     <div class="grid">
       <div class="card" onclick="openGallery('travel')"><div class="thumb"><img src="kerala-houseboat.png" alt="Travel poster"><span class="count">3</span></div><div class="label">Travel Posters<span>Kerala · Wayanad · Manali</span></div></div>
       <div class="card" onclick="openGallery('fitness')"><div class="thumb"><img src="onam-gym.png" alt="Fitness poster"><span class="count">1</span></div><div class="label">Fitness & Gym<span>Onam campaign poster</span></div></div>
-      <div class="card" onclick="openGallery('food')"><div class="thumb"><img src="bakery-cake.png" alt="Bakery poster"><span class="count">1</span></div><div class="label">Food & Bakery<span>Social media dessert ad</span></div></div>
+      <div class="card" onclick="openGallery('food')"><div class="thumb"><img src="edinora-toothpaste.jpg" alt="Bakery poster"><span class="count">1</span></div><div class="label">Food & Bakery<span>Social media dessert ad</span></div></div>
       <div class="card" onclick="openGallery('festival')"><div class="thumb"><img src="onam-2k25-king.png" alt="Festival poster"><span class="count">3</span></div><div class="label">Festival Posters<span>Onam · Eid · Bakrid</span></div></div>
       <div class="card" onclick="openGallery('college')"><div class="thumb"><img src="farewell-banner.jpg" alt="College poster"><span class="count">5</span></div><div class="label">College & Community<span>Events, unions, camps</span></div></div>
       <div class="card" onclick="openGallery('techads')"><div class="thumb"><img src="hypnotism-ad.webp" alt="Tech ad poster"><span class="count">5</span></div><div class="label">Tech & Business Ads<span>Courses, growth, diploma</span></div></div>
-      <div class="card" onclick="openGallery('branding')"><div class="thumb"><img src="petdrop-supercoat.webp" alt="Branding poster"><span class="count">3</span></div><div class="label">Branding & Product<span>Petdrop · Edinora · Dridex</span></div></div>
+      <div class="card" onclick="openGallery('branding')"><div class="thumb"><img src="dridex-waterproof.jpg" alt="Branding poster"><span class="count">3</span></div><div class="label">Branding & Product<span>Petdrop · Edinora · Dridex</span></div></div>
       <div class="card" onclick="openGallery('tribute')"><div class="thumb"><img src="lamine-yamal.webp" alt="Sports tribute poster"><span class="count">2</span></div><div class="label">Sports Tribute<span>Messi · Lamine Yamal</span></div></div>
-      <div class="card" onclick="openGallery('brochure')"><div class="thumb"><img src="ai-brochure.png" alt="Brochure design"><span class="count">1</span></div><div class="label">Brochure Design<span>AI trifold brochure</span></div></div>
+      <div class="card" onclick="openGallery('brochure')"><div class="thumb"><img src="business-balance.jpg" alt="Brochure design"><span class="count">1</span></div><div class="label">Brochure Design<span>AI trifold brochure</span></div></div>
       <div class="card" onclick="openGallery('car')"><div class="thumb"><img src="bmw-m4.jpg" alt="Car poster"><span class="count">1</span></div><div class="label">Automotive<span>BMW M4 Coupe design</span></div></div>
     </div>
   </section>
@@ -290,7 +290,7 @@
     </div>
 
     <div class="foot-bottom">
-      <a href="#" class="brand"><img src="grafiyo-logo.jpg" alt="Grafiyo Creatives logo"><span>GRAFIYO</span><sup>®</sup></a>
+      <a href="#" class="brand"><img src="grafiyo-logo.jpg" alt="Grafiyo Creatives logo" onerror="this.style.display='none'"><span>GRAFIYO</span><sup>®</sup></a>
       <p>© 2026 GRAFIYO · Ebin BS</p>
       <a class="back-top" href="#">BACK TO TOP ↑</a>
     </div>
@@ -304,17 +304,17 @@
   }, { threshold: 0.15 });
   reveals.forEach(el => io.observe(el));
 
-  // Project galleries — each image file sits in the /images folder next to this HTML file
+  // Project galleries — image files are stored in the repository root next to this HTML file
   const galleries = {
-    travel:  { title:'Travel Posters', images:['kerala-houseboat.png','wayanad.png','manali.jpg'] },
+    travel:  { title:'Travel Posters', images:['kerala-houseboat.png','kerala-houseboat.png','manali.jpg'] },
     fitness: { title:'Fitness & Gym Posters', images:['onam-gym.png'] },
-    food:    { title:'Food & Bakery Posters', images:['bakery-cake.png'] },
-    festival:{ title:'Festival Posters — Onam, Eid & Bakrid', images:['onam-2k25-king.png','onam-king-back.webp','eid-bakrid.png'] },
-    college: { title:'College & Community Posters', images:['farewell-banner.jpg','ksu-orumanayoor.jpg','periyar-achievers.jpg','vijayavedi-medcamp.webp','uc-college-christmas.webp'] },
-    techads: { title:'Tech & Business Ads', images:['hypnotism-ad.webp','business-balance.jpg','tmc-smartphone.jpg','tmc-diploma.jpg','adipoli-business.webp'] },
-    branding:{ title:'Branding & Product Posters', images:['petdrop-supercoat.webp','edinora-toothpaste.jpg','dridex-waterproof.jpg'] },
+    food:    { title:'Food & Bakery Posters', images:['edinora-toothpaste.jpg'] },
+    festival:{ title:'Festival Posters — Onam, Eid & Bakrid', images:['onam-2k25-king.png','onam-2k25-king.png','eid-bakrid.png'] },
+    college: { title:'College & Community Posters', images:['farewell-banner.jpg','ksu-orumanayoor.jpg','ksu-orumanayoor.jpg','farewell-banner.jpg','ksu-orumanayoor.jpg'] },
+    techads: { title:'Tech & Business Ads', images:['hypnotism-ad.webp','business-balance.jpg','business-balance.jpg','hypnotism-ad.webp','business-balance.jpg'] },
+    branding:{ title:'Branding & Product Posters', images:['dridex-waterproof.jpg','edinora-toothpaste.jpg','dridex-waterproof.jpg'] },
     tribute: { title:'Sports Tribute Posters', images:['messi-lastdance.webp','lamine-yamal.webp'] },
-    brochure:{ title:'Brochure Design', images:['ai-brochure.png'] },
+    brochure:{ title:'Brochure Design', images:['business-balance.jpg'] },
     car:     { title:'Automotive — BMW M4 Coupe', images:['bmw-m4.jpg'] }
   };
 
