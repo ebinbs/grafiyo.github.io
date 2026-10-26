@@ -34,7 +34,6 @@
   .nav-cta{border:1px solid var(--accent); color:var(--accent); padding:8px 18px; border-radius:30px; font-size:.82rem; font-weight:600; transition:background .2s ease, color .2s ease;}
   .nav-cta:hover{background:var(--accent); color:#fff;}
 
-  /* HERO — matches reference layout */
   .hero{padding:56px 0 64px; position:relative; overflow:hidden;}
   .hero::before{content:""; position:absolute; top:-140px; right:-160px; width:460px; height:460px; border-radius:50%;
     background:radial-gradient(circle, rgba(255,67,28,.3), transparent 70%); filter:blur(10px); z-index:0;}
@@ -67,7 +66,6 @@
   .hero-card-bottom .display{font-size:clamp(1.8rem,7vw,2.8rem);}
   .hero-card-bottom .display span{color:var(--accent);}
 
-  /* Instagram — no counts, just CTA */
   .ig{padding:56px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
   .ig-grid{display:grid; grid-template-columns:230px 1fr; gap:40px; align-items:center;}
   .phone{border:1px solid var(--line); border-radius:28px; padding:10px; background:#000; box-shadow:0 20px 50px -20px rgba(255,67,28,.3);}
@@ -76,14 +74,12 @@
   .ig-content h2 span{color:var(--accent);}
   .ig-content p{color:var(--muted); max-width:50ch; margin-bottom:22px;}
 
-  /* Marquee */
   .marquee{border-bottom:1px solid var(--line); overflow:hidden; padding:16px 0;}
   .marquee-track{display:flex; width:max-content; animation:scrollLeft 24s linear infinite;}
   .marquee-track span{font-family:'Archivo Black',sans-serif; font-size:.95rem; color:var(--muted); padding:0 28px; white-space:nowrap;}
   .marquee-track span.on{color:var(--accent);}
   @keyframes scrollLeft{from{transform:translateX(0);} to{transform:translateX(-50%);}}
 
-  /* Work — 2 rows */
   section.work{padding:64px 0;}
   .work h2{font-size:1.9rem; margin-bottom:8px;}
   .work .note{color:var(--muted); margin-bottom:34px;}
@@ -97,7 +93,6 @@
   .card .label{padding:12px 14px; font-size:.85rem;}
   .card .label span{display:block; color:var(--muted); font-size:.72rem; margin-top:2px;}
 
-  /* Reviews — star quotes, matches reference */
   .reviews{padding:56px 0; border-top:1px solid var(--line);}
   .reviews h2{font-size:1.9rem; margin-bottom:34px;}
   .rev-list{display:flex; flex-direction:column;}
@@ -107,7 +102,6 @@
   .rev-row p{font-size:1.05rem; margin-bottom:10px;}
   .rev-row .who{color:var(--muted); font-size:.9rem;}
 
-  /* Contact Us — matches reference card layout */
   footer{padding:64px 0 48px;}
   .contact-card{background:linear-gradient(160deg,#1F1310,#0A0706); border:1px solid var(--line); border-radius:24px; padding:52px 32px; text-align:center;}
   .contact-card h2.display{font-size:clamp(2.2rem,9vw,3.4rem);}
@@ -136,7 +130,6 @@
   .reveal{opacity:0; transform:translateY(24px); transition:opacity .6s ease, transform .6s ease;}
   .reveal.in{opacity:1; transform:translateY(0);}
 
-  /* Modal */
   .modal-overlay{position:fixed; inset:0; background:rgba(0,0,0,.84); display:none; align-items:center; justify-content:center; z-index:50; padding:20px; backdrop-filter:blur(4px);}
   .modal-overlay.open{display:flex;}
   .modal{background:var(--panel); border:1px solid var(--line); border-radius:18px; max-width:760px; width:100%; max-height:85vh; overflow:auto; padding:28px;}
@@ -221,13 +214,13 @@
     <div class="grid">
       <div class="card" onclick="openGallery('travel')"><div class="thumb"><img src="kerala-houseboat.png" alt="Travel poster"><span class="count">3</span></div><div class="label">Travel Posters<span>Kerala · Wayanad · Manali</span></div></div>
       <div class="card" onclick="openGallery('fitness')"><div class="thumb"><img src="onam-gym.png" alt="Fitness poster"><span class="count">1</span></div><div class="label">Fitness & Gym<span>Onam campaign poster</span></div></div>
-      <div class="card" onclick="openGallery('food')"><div class="thumb"><img src="edinora-toothpaste.jpg" alt="Bakery poster"><span class="count">1</span></div><div class="label">Food & Bakery<span>Social media dessert ad</span></div></div>
+      <div class="card" onclick="openGallery('food')"><div class="thumb"><img src="bakery-cake.png" alt="Bakery poster"><span class="count">1</span></div><div class="label">Food & Bakery<span>Social media dessert ad</span></div></div>
       <div class="card" onclick="openGallery('festival')"><div class="thumb"><img src="onam-2k25-king.png" alt="Festival poster"><span class="count">3</span></div><div class="label">Festival Posters<span>Onam · Eid · Bakrid</span></div></div>
       <div class="card" onclick="openGallery('college')"><div class="thumb"><img src="farewell-banner.jpg" alt="College poster"><span class="count">5</span></div><div class="label">College & Community<span>Events, unions, camps</span></div></div>
       <div class="card" onclick="openGallery('techads')"><div class="thumb"><img src="hypnotism-ad.webp" alt="Tech ad poster"><span class="count">5</span></div><div class="label">Tech & Business Ads<span>Courses, growth, diploma</span></div></div>
-      <div class="card" onclick="openGallery('branding')"><div class="thumb"><img src="dridex-waterproof.jpg" alt="Branding poster"><span class="count">3</span></div><div class="label">Branding & Product<span>Petdrop · Edinora · Dridex</span></div></div>
+      <div class="card" onclick="openGallery('branding')"><div class="thumb"><img src="petdrop-supercoat.webp" alt="Branding poster"><span class="count">3</span></div><div class="label">Branding & Product<span>Petdrop · Edinora · Dridex</span></div></div>
       <div class="card" onclick="openGallery('tribute')"><div class="thumb"><img src="lamine-yamal.webp" alt="Sports tribute poster"><span class="count">2</span></div><div class="label">Sports Tribute<span>Messi · Lamine Yamal</span></div></div>
-      <div class="card" onclick="openGallery('brochure')"><div class="thumb"><img src="business-balance.jpg" alt="Brochure design"><span class="count">1</span></div><div class="label">Brochure Design<span>AI trifold brochure</span></div></div>
+      <div class="card" onclick="openGallery('brochure')"><div class="thumb"><img src="ai-brochure.png" alt="Brochure design"><span class="count">1</span></div><div class="label">Brochure Design<span>AI trifold brochure</span></div></div>
       <div class="card" onclick="openGallery('car')"><div class="thumb"><img src="bmw-m4.jpg" alt="Car poster"><span class="count">1</span></div><div class="label">Automotive<span>BMW M4 Coupe design</span></div></div>
     </div>
   </section>
@@ -304,17 +297,17 @@
   }, { threshold: 0.15 });
   reveals.forEach(el => io.observe(el));
 
-  // Project galleries — image files are stored in the repository root next to this HTML file
+  // Project galleries — image files sit in the same folder as this HTML file
   const galleries = {
-    travel:  { title:'Travel Posters', images:['kerala-houseboat.png','kerala-houseboat.png','manali.jpg'] },
+    travel:  { title:'Travel Posters', images:['kerala-houseboat.png','wayanad.png','manali.jpg'] },
     fitness: { title:'Fitness & Gym Posters', images:['onam-gym.png'] },
-    food:    { title:'Food & Bakery Posters', images:['edinora-toothpaste.jpg'] },
-    festival:{ title:'Festival Posters — Onam, Eid & Bakrid', images:['onam-2k25-king.png','onam-2k25-king.png','eid-bakrid.png'] },
-    college: { title:'College & Community Posters', images:['farewell-banner.jpg','ksu-orumanayoor.jpg','ksu-orumanayoor.jpg','farewell-banner.jpg','ksu-orumanayoor.jpg'] },
-    techads: { title:'Tech & Business Ads', images:['hypnotism-ad.webp','business-balance.jpg','business-balance.jpg','hypnotism-ad.webp','business-balance.jpg'] },
-    branding:{ title:'Branding & Product Posters', images:['dridex-waterproof.jpg','edinora-toothpaste.jpg','dridex-waterproof.jpg'] },
+    food:    { title:'Food & Bakery Posters', images:['bakery-cake.png'] },
+    festival:{ title:'Festival Posters — Onam, Eid & Bakrid', images:['onam-2k25-king.png','onam-king-back.webp','eid-bakrid.png'] },
+    college: { title:'College & Community Posters', images:['farewell-banner.jpg','ksu-orumanayoor.jpg','periyar-achievers.jpg','vijayavedi-medcamp.webp','uc-college-christmas.webp'] },
+    techads: { title:'Tech & Business Ads', images:['hypnotism-ad.webp','business-balance.jpg','tmc-smartphone.jpg','tmc-diploma.jpg','adipoli-business.webp'] },
+    branding:{ title:'Branding & Product Posters', images:['petdrop-supercoat.webp','edinora-toothpaste.jpg','dridex-waterproof.jpg'] },
     tribute: { title:'Sports Tribute Posters', images:['messi-lastdance.webp','lamine-yamal.webp'] },
-    brochure:{ title:'Brochure Design', images:['business-balance.jpg'] },
+    brochure:{ title:'Brochure Design', images:['ai-brochure.png'] },
     car:     { title:'Automotive — BMW M4 Coupe', images:['bmw-m4.jpg'] }
   };
 
